@@ -11,11 +11,11 @@ Menggunakan loop for dengan batas baris ke string NIM [10]
 Menggunakan loop for dengan batas baris ke string Nama [10]
 
 Proses
-Menggabungkan data tiap array 1D ke 2D
+Menggabungkan data tiap array 1D ke 2D menjadi kolom
 
 
 Output
-Double loop for(batas loop pertama baris, loop kedua kolom) output int array2D 
+Double loop for(batas loop pertama baris, loop kedua kolom) output string array2D 
 for bla bla bla
   for bla bla bla
     cout<<array2D[i][j]<<" ";

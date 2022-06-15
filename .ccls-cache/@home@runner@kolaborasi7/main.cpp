@@ -4,43 +4,29 @@ using namespace std;
 class kasus{
   private:
   int baris,kolom;
-  string NIM[10];
-  string nama[10];
-  string kelas[10];
+  string data[100];
   string array2D[50][50];
   
   public:
-    void input();
-    void proses();
-    void output();
+    void input();//Shaluna Fasya Elmina-229
+    void proses();//Andri Pratama-249
+    void output();//Dini Rohmah-234
 
 };
-
+//Kapan2 aja temen-temen benerinnya, besok kalo aku sempet deh aku benerin.
 void kasus::input(){
   cout<<"Masukkan jumlah baris : "; cin>>baris;
   cout<<"Masukkan jumlah kolom : "; cin>>kolom;
-
-  for(int i=0; i<baris; i++){
-    cout<<"Masukkan kelas mahasiswa ke-"<<i+1<<" : "; cin>>kelas[i];
-  }
-
-  for(int i=0; i<baris; i++){
-    cout<<"Masukkan NIM mahasiswa ke-"<<i+1<<" : "; cin>>NIM[i];
-  }
-  cin.ignore();
-  for(int i=0; i<baris; i++){
-      cout<<"Masukkan nama mahasiswa ke-"<<i+1<<" : "; getline(cin,nama[i]);
-  }
-
+cin.ignore();
+    for(int i=0; i<baris*kolom; i++){
+    cout<<"Masukkan Data : ";getline(cin,data[i]);
+}
 }
 
 void kasus::proses(){
-  int a=0,b=1,c=2;
   for(int i=0;i<baris;i++){
     for(int j=0;j<kolom;j++){
-      array2D[i][a]=kelas[i];
-      array2D[i][b]=NIM[i];
-      array2D[i][c]=nama[i];
+      array2D[i][j]=data[i*baris+j];
     }
   }
 }
