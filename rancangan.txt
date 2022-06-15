@@ -1,0 +1,21 @@
+-2100018229 Shaluna Fasya Elmina
+-2100018234 Dini Rohmah
+-2100018249 Andri Pratama 
+
+
+Input
+Input baris int baris
+Input kolom int kolom
+Menggunakan loop for dengan batas baris ke string kelas[10]
+Menggunakan loop for dengan batas baris ke string NIM [10]
+Menggunakan loop for dengan batas baris ke string Nama [10]
+
+Proses
+Menggabungkan data tiap array 1D ke 2D
+
+
+Output
+Double loop for(batas loop pertama baris, loop kedua kolom) output int array2D 
+for bla bla bla
+  for bla bla bla
+    cout<<array2D[i][j]<<" ";
